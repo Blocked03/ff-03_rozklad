@@ -103,7 +103,7 @@ def repeat_all_messages(message):
 @bot.message_handler(regexp = "Корисні посилання")
 def repeat_all_messages(message):
     markup = types.InlineKeyboardMarkup()
-    btn_my_site1= types.InlineKeyboardButton(text='Інформаційний канал', url='https://t.me/Peniamin')
+    btn_my_site1= types.InlineKeyboardButton(text='Інформаційний канал', url='https://t.me/mishamms')
     markup.add(btn_my_site1)
     bot.send_message(message.chat.id, "Посилання:", reply_markup = markup)
 
@@ -111,7 +111,7 @@ def repeat_all_messages(message):
 def repeat_all_messages(message):
     sheet = google()
     markup = types.InlineKeyboardMarkup()
-    bot.send_message(message.chat.id, str(sheet.row_values(5)[0]))
+    bot.send_message(message.chat.id, str(sheet.row_values(6)[0]))
 
 
 @bot.message_handler(regexp = "Домашнє завдання")
